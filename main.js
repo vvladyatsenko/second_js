@@ -108,34 +108,35 @@ console.log(evenFn(20)); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  */
 
 function weekFn(n) {
-    var days = '';
-    switch (n) {
-        case 1:
-            days = 'Mondey';
-            break;
-        case 2:
-            days = 'Tuesday';
-            break;
-        case 3:
-            days = 'Wednesday';
-            break;
-        case 4:
-            days = 'Thursday';
-            break;
-        case 5:
-            days = 'Friday';
-            break;
-        case 6:
-            days = 'Saturday';
-            break;
-        case 7:
-            days = 'Sunday';
-            break;
+  let day = '';
 
-        default:
-            days = null;
-    }
-    return days
+  switch (n) {
+    case 1:
+      day = 'Понедельник';
+      break;
+    case 2:
+      day = 'Вторник';
+      break;
+    case 3:
+      day = 'Среда';
+      break;
+    case 4:
+      day = 'Четверг';
+      break;
+    case 5:
+      day = 'Пятница';
+      break;
+    case 6:
+      day = 'Суббота';
+      break;
+    case 7:
+      day = 'Воскресенье';
+      break;
+    default:
+      day = null;
+  }
+
+  return day;
 }
 
 console.log(weekFn(1)); // 'Понедельник'
